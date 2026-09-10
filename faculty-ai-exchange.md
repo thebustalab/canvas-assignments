@@ -1,8 +1,8 @@
 ---
 title: Editing a Canvas course as a spreadsheet
 summary: Pull every assignment in a Canvas course into a CSV, edit the dates in a spreadsheet, and push them back in one command instead of forty page loads.
-faculty: Lucas Busta
-department: Chemistry and Biochemistry
+faculty: Dr. Lucas Busta
+department: Chemistry and Biochemistry, University of Minnesota Duluth
 department_id: chemistry-and-biochemistry
 audience: Faculty who maintain their own Canvas courses and roll them forward each term
 use_case: Course administration
@@ -10,12 +10,12 @@ tools:
   - Claude Code
   - Canvas LMS REST API
 tags:
-  - canvas
-  - lms
-  - course administration
-  - csv
-  - python
-image: /assets/images/canvas-assignments-cover.jpg
+  - Teaching
+  - Course administration
+  - Canvas LMS
+  - CSV
+  - Python
+image: /assets/images/canvas-assignments.jpg
 repository_url: https://github.com/thebustalab/canvas-assignments
 ---
 
