@@ -15,7 +15,7 @@ tags:
   - course administration
   - csv
   - python
-image: /assets/images/example.svg
+image: /assets/images/canvas-assignments-cover.jpg
 repository_url: https://github.com/thebustalab/canvas-assignments
 ---
 
