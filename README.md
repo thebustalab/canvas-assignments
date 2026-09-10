@@ -19,7 +19,8 @@ canvas-assignments push course.csv --course-id 12345 --domain canvas.example.edu
 canvas-assignments push course.csv --course-id 12345 --domain canvas.example.edu --apply
 ```
 
-Both directions read the same column definition, so the round trip is lossless.
+Both directions read the same column definition, so the round trip is faithful:
+the pull writes exactly the columns the push reads.
 
 ## The two rules that make it safe to re-run
 
@@ -62,9 +63,18 @@ then put it in your environment:
 export CANVAS_TOKEN="…"
 ```
 
-The tool reads `CANVAS_TOKEN`, or takes `--token`. It is never written to disk
-and never hard-coded — treat it like a password, because it can do anything to
-your courses that you can.
+The tool reads `CANVAS_TOKEN`, or takes `--token`.
+
+**Treat that token like your Canvas password, because that is roughly what it
+is.** A Canvas user access token is not scoped to a course or to this tool: it
+grants the whole API as you — every course you teach or are enrolled in, the
+gradebook, your files, your inbox, your profile, and account-level endpoints if
+your role has them. Anyone holding it can read student data you have access to.
+
+Prefer the environment variable. A token passed as `--token` on the command line
+lands in your shell history and is visible to other users of the machine in the
+process list. The tool itself never writes it to disk and there is no
+hard-coded token anywhere in this repo.
 
 Your course id is the number in the course URL:
 `https://canvas.example.edu/courses/`**`12345`**.
@@ -93,6 +103,11 @@ Descriptions are long HTML, which spreadsheets handle badly, so `pull` writes
 each one to its own file under `assignment_descriptions/` and puts the path in
 `description_file`. Pass `--inline-descriptions` if you would rather have them
 in the cell.
+
+A `pull` produces real course data — assignment text, dates, and your course
+structure. If you work inside a clone of this repo, note that `.gitignore`
+already excludes `*.csv` and `assignment_descriptions/` at the top level for
+exactly that reason. Keep your own pull output out of version control.
 
 ### Timezones
 

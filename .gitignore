@@ -19,3 +19,8 @@ env/
 *.swp
 .idea/
 .vscode/
+
+# Tool output — a pull writes REAL course data. Keep it out of version control.
+# Root-anchored so the synthetic example/ tree is unaffected.
+/*.csv
+/assignment_descriptions/
