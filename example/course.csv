@@ -1,0 +1,5 @@
+canvas_id,name,assignment_group,points_possible,due_at,unlock_at,lock_at,published,submission_types,allowed_extensions,external_tool_url,external_tool_new_tab,omit_from_final_grade,description_file,description
+101,Problem set 1,Problem sets,10,2026-09-11 23:59,,,TRUE,online_upload,pdf,,,,assignment_descriptions/problem_set_1.html,
+102,Problem set 2,Problem sets,10,2026-09-18 23:59,,,TRUE,online_upload,pdf,,,,,
+103,Reading response: week 1,Participation,2,2026-09-09 09:00,,,TRUE,online_text_entry,,,,TRUE,assignment_descriptions/reading_response_week_1.html,
+,Midterm project proposal,Projects,25,2026-10-16 23:59,2026-10-02 08:00,,FALSE,online_upload,pdf;docx,,,,,Submit a one-page proposal. See the syllabus for the rubric.

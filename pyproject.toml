@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "canvas-assignments"
+version = "0.1.0"
+description = "Round-trip Canvas LMS assignments through a CSV: pull a course to a spreadsheet, edit, push it back."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Lucas Busta" }]
+dependencies = ["requests>=2.25"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+markdown = ["markdown>=3.0"]
+
+[project.scripts]
+canvas-assignments = "canvas_assignments.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["canvas_assignments*"]
