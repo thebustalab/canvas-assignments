@@ -3,7 +3,7 @@ title: Editing a Canvas course as a spreadsheet
 summary: Pull every assignment in a Canvas course into a CSV, edit the dates in a spreadsheet, and push them back in one command instead of forty page loads.
 faculty: Dr. Lucas Busta
 department: Chemistry and Biochemistry, University of Minnesota Duluth
-department_id: chemistry-and-biochemistry
+department_id: umd-chemistry-and-biochemistry
 audience: Faculty who maintain their own Canvas courses and roll them forward each term
 use_case: Course administration
 tools:
