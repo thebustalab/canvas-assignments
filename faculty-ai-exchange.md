@@ -15,7 +15,7 @@ tags:
   - Canvas LMS
   - CSV
   - Python
-image: /assets/images/canvas-assignments.jpg
+image: /assets/images/canvas-assignments.png
 repository_url: https://github.com/thebustalab/canvas-assignments
 ---
 
